@@ -15,6 +15,7 @@ def goes_first():
     
 from IPython.display import clear_output
 
+
 def display_board(board):
     clear_output()    
     print(board[7]+" | "+board[8]+" | "+board[9])
@@ -23,8 +24,10 @@ def display_board(board):
     print('----------')
     print(board[1]+" | "+board[2]+" | "+board[3])    
 
+    
 def space_check():
     pass
+
 
 def checkmate(mark):
     
@@ -36,9 +39,11 @@ def checkmate(mark):
     (theBoard[9] == mark and theBoard[6] == mark and theBoard[3] == mark) or # down the right side
     (theBoard[7] == mark and theBoard[5] == mark and theBoard[3] == mark) or # diagonal
     (theBoard[9] == mark and theBoard[5] == mark and theBoard[1] == mark)) # diagonal
-    
+
+
 def tie():
     pass
+
 
 turn=goes_first()
 while True:
