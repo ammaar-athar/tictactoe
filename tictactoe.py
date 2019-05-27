@@ -1,6 +1,5 @@
 theBoard=[' ']*10
 
-
 def player_input():
     choice=input("What would player 1 like to be?: ").upper()
     if choice=='X':
@@ -22,8 +21,7 @@ def display_board(board):
     print('----------')
     print(board[4]+" | "+board[5]+" | "+board[6])
     print('----------')
-    print(board[1]+" | "+board[2]+" | "+board[3])
-    
+    print(board[1]+" | "+board[2]+" | "+board[3])    
 
 def space_check():
     pass
@@ -41,8 +39,6 @@ def checkmate(mark):
     
 def tie():
     pass
-    
-
 
 turn=goes_first()
 while True:
